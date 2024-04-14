@@ -1,3 +1,5 @@
-.idea
+.idea/
+!.idea/leetcode/
+
 out
 leetcode/editor/cn/doc/solution/
