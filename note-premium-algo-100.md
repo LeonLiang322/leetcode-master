@@ -1,6 +1,6 @@
 # 尊享面试100题
 
-## 624.[数组列表中的最大距离](./leetcode/editor/cn/MaximumDistanceInArrays.java)
+## 624. [数组列表中的最大距离](./leetcode/editor/cn/MaximumDistanceInArrays.java)
 
 ### 暴力解法
 
@@ -49,4 +49,18 @@ A: max_val和min_val在使用时是处理之前的数组时记录的，并不会
 总结规律，则当i为偶数位时，判断[i+1]是否大于[i]，是则互换
 
 则当i为奇数位时，判断[i+1]是否小于[i]，是则互换
+
+## 1056. [易混淆数](./leetcode/editor/cn/ConfusingNumber.java)
+
+由于倒转后的值是顺序变为逆序的，所以用纯数学方法储存结果需要知道数值的位数，并不方便。所以在此处使用StringBuilder创建字符串来储存结果。
+
+创建数值的副本，每次通过取余来获得最后一位数，上下倒转后append到StringBuilder中，并将副本减去该值。例如：
+
+number=8196, res="0"
+
+第一次处理后：number=819, res="06"
+
+第二次处理后：number=81, res="061"
+
+以此类推，并最终使用`Integer.parseInt`转化为整数，开头的0会自动去除
 
