@@ -64,7 +64,7 @@ number=8196, res="0"
 
 以此类推，并最终使用`Integer.parseInt`转化为整数，开头的0会自动去除
 
-## 1024. [字符串的左右移](./leetcode/editor/cn/PerformStringShifts.java)
+## 1427. [字符串的左右移](./leetcode/editor/cn/PerformStringShifts.java)
 
 首先以整数形式计算最终的移动方向和步数，存于`finalShift`中
 
