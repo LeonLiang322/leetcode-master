@@ -91,3 +91,13 @@ number=8196, res="0"
 记录单词的起始位置，当遇到空格则将start到当前位置的单词反转
 
 由于最后一个单词后并没有空格，所以最后手动将该单词反转
+
+## 1055. [形成字符串的最短路径](./leetcode/editor/cn/ShortestWayToFormString.java)
+
+使用双指针的思路，遍历`source`字符串，当`source`的字符与`target`的字符相同时，两个指针同时向后移动
+
+当`source`的字符与`target`的字符不同时，只有`source`的指针向后移动
+
+当`source`的指针到达末尾时，如果`target`的当前字符未能在`source`中找到，则返回-1
+
+否则，`source`的指针回到开头，计数器+1
