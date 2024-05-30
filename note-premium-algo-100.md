@@ -120,3 +120,18 @@ number=8196, res="0"
 ## 340. [至多包含 K 个不同字符的最长子串](./leetcode/editor/cn/LongestSubstringWithAtMostKDistinctCharacters.java)
 
 与上一题类似，只是将`count`的判断条件改为`count > k`即可
+
+## 487. [最大连续1的个数 II](./leetcode/editor/cn/MaxConsecutiveOnesIi.java)
+
+**
+该题仍然可以使用上两题的滑动窗口思路，但是由于只能翻转一次0，所以只需要在碰到第二个0时，将左指针移动到第一个0的下一位即可 **
+
+使用滑动窗口的思路，定义窗口左右指针，首先移动右指针遍历数组
+
+当当前字符为0时，将左指针移动到前一个0的位置的下一位，并将当前0的位置记录到`zero`中
+
+每次更新最大长度
+
+
+
+
