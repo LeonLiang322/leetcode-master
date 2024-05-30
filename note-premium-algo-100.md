@@ -117,3 +117,6 @@ number=8196, res="0"
 
 当`count`减到2时，更新最大长度
 
+## 340. [至多包含 K 个不同字符的最长子串](./leetcode/editor/cn/LongestSubstringWithAtMostKDistinctCharacters.java)
+
+与上一题类似，只是将`count`的判断条件改为`count > k`即可
