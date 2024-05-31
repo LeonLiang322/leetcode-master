@@ -140,6 +140,10 @@ number=8196, res="0"
 
 当滑窗长度等于`k`时，如果当前字符也刚好五种，则计数器+1
 
+## 760. [找出变位映射](./leetcode/editor/cn/FindAnagramMappings.java)
 
+使用双循环的方法就不赘述了，这里使用标准思路hashmap来存储`num2`数组的值和对应的下标
+
+遍历`num1`数组，将`num1`数组的值和对应的下标存储在map中，然后遍历`num2`数组，将`num2`数组的值在map中查找对应的下标
 
 
