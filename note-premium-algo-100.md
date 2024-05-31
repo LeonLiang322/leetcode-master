@@ -132,6 +132,14 @@ number=8196, res="0"
 
 每次更新最大长度
 
+## 1100. [长度为 K 的无重复字符子串](./leetcode/editor/cn/FindKLengthSubstringsWithNoRepeatedCharacters.java)
+
+与159类似，使用滑动窗口的思路
+
+当滑窗长度大于`k`时，移动左指针并在`map`中减去左指针对应的字符的出现次数。当该字符的出现次数为0时，`count`减1
+
+当滑窗长度等于`k`时，如果当前字符也刚好五种，则计数器+1
+
 
 
 
