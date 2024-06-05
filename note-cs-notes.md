@@ -70,3 +70,9 @@
 ### 为什么while中的条件只需要`ni >= 0`？
 
 因为当`ni < 0`时，说明`nums2`中的元素已经全部放到`nums1`中了，且此时`nums1`中的元素已经是有序的，不需要再进行操作
+
+## 141. [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+
+使用快慢指针的思路，定义快指针`fast`指向`head.next`，慢指针`slow`指向`head`
+
+`fast`每次移动两步，`slow`每次移动一步，当`fast`和`slow`相遇时，说明链表中存在环
