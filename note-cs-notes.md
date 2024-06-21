@@ -2,11 +2,15 @@
 
 ## 167. [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
+Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/TwoSumIiInputArrayIsSorted.java)
+
 使用双指针的思路，定义左指针指向0，右指针指向`numbers.length - 1`
 
 当两个指针指向的数之和大于`target`时，右指针向左移动，否则左指针向右移动
 
 ## 633. [平方数之和](https://leetcode-cn.com/problems/sum-of-square-numbers/)
+
+Code: [633. 平方数之和](./leetcode/editor/cn/SumOfSquareNumbers.java)
 
 使用双指针的思路，定义左指针指向0，右指针指向`sqrt(c)`
 
@@ -42,6 +46,8 @@
 
 ## 345. [反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)
 
+Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/ReverseVowelsOfAString.java)
+
 使用双指针的思路，定义左指针指向0，右指针指向`n - 1`
 
 当左指针指向的字符不是元音字母时，左指针向右移动
@@ -54,6 +60,8 @@
 
 ## 680. [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 
+Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/ValidPalindromeIi.java)
+
 使用双指针的思路，定义左指针指向0，右指针指向`n - 1`
 
 由于只能删除一个字符，所以只要有一个分支是回文串，那么整个字符串就是回文串，所以当左指针指向的字符不等于右指针指向的字符时，可以尝试进行删除操作：
@@ -62,6 +70,8 @@
 - 当删除右边的字符时，右指针向左移动，左指针不动，然后继续判断完剩余的字符串是否是回文串
 
 ## 88. [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+
+Code: [88. 合并两个有序数组](./leetcode/editor/cn/MergeSortedArray.java)
 
 使用双指针的思路，定义`mi`指向`nums1`的数据尾部，`ni`指向`nums2`数据尾部，`i`指向`nums1`的数组尾部
 
@@ -73,11 +83,15 @@
 
 ## 141. [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 
+Code: [141. 环形链表](./leetcode/editor/cn/LinkedListCycle.java)
+
 使用快慢指针的思路，定义快指针`fast`指向`head.next`，慢指针`slow`指向`head`
 
 `fast`每次移动两步，`slow`每次移动一步，当`fast`和`slow`相遇时，说明链表中存在环
 
 ## 524. [通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)
+
+Code: [524. 通过删除字母匹配到字典里最长单词](./leetcode/editor/cn/LongestWordInDictionaryThroughDeleting.java)
 
 创建`res`储存结果，遍历字典中的单词，对每个单词`dic`进行检查：
 - 如果`dic`长度小于`res`的长度，则直接跳过
@@ -90,6 +104,8 @@
 当循环结束时，如果`j`到达`dic`的尾部，说明`dic`是`s`的子序列
 
 ## 455. [分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
+
+Code: [455. 分发饼干](./leetcode/editor/cn/AssignCookies.java)
 
 这题使用贪心算法，需要保证：
 1. 给一个孩子的饼干应当尽量小并且又能满足该孩子，这样大饼干才能拿来给满足度比较大的孩子
