@@ -119,3 +119,34 @@ Code: [455. 分发饼干](./leetcode/editor/cn/AssignCookies.java)
 
 证明：假设在某次选择中，贪心策略选择给当前满足度最小的孩子分配第 m 个饼干，第 m 个饼干为可以满足该孩子的最小饼干。假设存在一种最优策略，可以给该孩子分配第 n 个饼干，并且 m < n。我们可以发现，经过这一轮分配，贪心策略分配后剩下的饼干一定有一个比最优策略来得大。因此在后续的分配中，贪心策略一定能满足更多的孩子。也就是说不存在比贪心策略更优的策略，即贪心策略就是最优策略
 
+## 435. [无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+
+Code: [435. 无重叠区间](./leetcode/editor/cn/NonOverlappingIntervals.java)
+
+本题的题意可以表达为:今天有好几个活动，每个活动都可以用区间`[start,end]`表示开始和结束的时间，那么最多能参加几个活动？
+
+所以优先选择参加那些结束时间早的，因为这样可以留下更多的时间参加其余的活动。如果有多个结束时间相同的，选择开始时间晚的，因为这样有助于参加更多的活动
+
+所以总体思路就是先把`intervals`先做个优先级排序，排在前面的优先级高于排在后面的。规则为：
+1. 按照结束时间从早到晚排序，结束时间相同的，开始时间晚的排在前面
+2. 遍历排序好的`intervals`，如果后面的活动和前面的活动冲突了，就选择移除后面的活动
+
+对于算法，首先使用`Arrays.sort`对`intervals`进行排序，其中使用java的lambda表达式来定义排序规则，让比对的对象为`intervals`中的每个小数组的第二位，即结束时间。所以在排序后将会得到一个按照结束时间从早到晚排序的`intervals`
+
+然后定义`end`为`intervals[0][1]`，遍历`intervals`，即第一个活动的结束时间，定义`available`为1，即第一个活动一定是要参加的，然后从第二个活动开始遍历，如果`intervals[i][0] >= end`，说明这个活动和前一个活动不冲突，可以参加，`end`更新为`intervals[i][1]`，`available++`，否则直接跳过。因为最后需要返回的是最多能参加的活动数，所以最后返回`intervals.length - available`即可
+
+### Lambda表达式的速度优化
+
+Lambda表达式的速度比较慢，可以使用`Comparator`接口来实现排序，速度会更快
+
+```java
+public int eraseOverlapIntervals(int[][] intervals) {
+    // ...
+    Arrays.sort(intervals, new Comparator<int[]>() {
+        @Override
+        public int compare(int[] o1, int[] o2) {
+            return (o1[1] < o2[1]) ? -1 : ((o1[1] == o2[1]) ? 0 : 1);
+        }
+    });
+}
+```
