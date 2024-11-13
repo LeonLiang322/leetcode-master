@@ -2,7 +2,7 @@
 
 ## 167. [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
-Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/TwoSumIiInputArrayIsSorted.java)
+Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/Q167_TwoSumIiInputArrayIsSorted.java)
 
 使用双指针的思路，定义左指针指向0，右指针指向`numbers.length - 1`
 
@@ -10,7 +10,7 @@ Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/TwoSumIiI
 
 ## 633. [平方数之和](https://leetcode-cn.com/problems/sum-of-square-numbers/)
 
-Code: [633. 平方数之和](./leetcode/editor/cn/SumOfSquareNumbers.java)
+Code: [633. 平方数之和](./leetcode/editor/cn/Q633_SumOfSquareNumbers.java)
 
 使用双指针的思路，定义左指针指向0，右指针指向`sqrt(c)`
 
@@ -46,7 +46,7 @@ Code: [633. 平方数之和](./leetcode/editor/cn/SumOfSquareNumbers.java)
 
 ## 345. [反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)
 
-Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/ReverseVowelsOfAString.java)
+Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/Q345_ReverseVowelsOfAString.java)
 
 使用双指针的思路，定义左指针指向0，右指针指向`n - 1`
 
@@ -60,7 +60,7 @@ Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/ReverseVowel
 
 ## 680. [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 
-Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/ValidPalindromeIi.java)
+Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/Q680_ValidPalindromeIi.java)
 
 使用双指针的思路，定义左指针指向0，右指针指向`n - 1`
 
@@ -71,11 +71,12 @@ Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/ValidPalindromeIi.ja
 
 ## 88. [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
 
-Code: [88. 合并两个有序数组](./leetcode/editor/cn/MergeSortedArray.java)
+Code: [88. 合并两个有序数组](./leetcode/editor/cn/Q88_MergeSortedArray.java)
 
 使用双指针的思路，定义`mi`指向`nums1`的数据尾部，`ni`指向`nums2`数据尾部，`i`指向`nums1`的数组尾部
 
-从后往前遍历，当`mi >= 0`且`ni >= 0`时，比较`nums1[mi]`和`nums2[ni]`的大小，将较大的值放到`nums1[i]`，然后`mi--`或`ni--`，`i--`
+从后往前遍历，当`mi >= 0`且`ni >= 0`时，比较`nums1[mi]`和`nums2[ni]`的大小，将较大的值放到`nums1[i]`，然后`mi--`或`ni--`，
+`i--`
 
 ### 为什么while中的条件只需要`ni >= 0`？
 
@@ -91,49 +92,58 @@ Code: [141. 环形链表](./leetcode/editor/cn/Q141_LinkedListCycle.java)
 
 ## 524. [通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)
 
-Code: [524. 通过删除字母匹配到字典里最长单词](./leetcode/editor/cn/LongestWordInDictionaryThroughDeleting.java)
+Code: [524. 通过删除字母匹配到字典里最长单词](./leetcode/editor/cn/Q524_LongestWordInDictionaryThroughDeleting.java)
 
 创建`res`储存结果，遍历字典中的单词，对每个单词`dic`进行检查：
+
 - 如果`dic`长度小于`res`的长度，则直接跳过
 - 如果`dic`长度等于`res`的长度，且`dic`字典序小于`res`，也直接跳过。此处由于`res`是完整的单词，所以直接与`dic`比较即可
 
 当不跳过时，检查`dic`是否是`s`的子序列，如果是，则更新`res`
 
-检查的思路使用双指针，定义`i`指向`s`的头部，`j`指向`dic`的头部，循环比较`s[i]`和`dic[j]`是否相等，如果相等，则`i++`，`j++`，否则`i++`，直到`i`或者`j`其中一者到达尾部
+检查的思路使用双指针，定义`i`指向`s`的头部，`j`指向`dic`的头部，循环比较`s[i]`和`dic[j]`是否相等，如果相等，则`i++`，`j++`，否则
+`i++`，直到`i`或者`j`其中一者到达尾部
 
 当循环结束时，如果`j`到达`dic`的尾部，说明`dic`是`s`的子序列
 
 ## 455. [分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
 
-Code: [455. 分发饼干](./leetcode/editor/cn/AssignCookies.java)
+Code: [455. 分发饼干](./leetcode/editor/cn/Q455_AssignCookies.java)
 
 这题使用贪心算法，需要保证：
+
 1. 给一个孩子的饼干应当尽量小并且又能满足该孩子，这样大饼干才能拿来给满足度比较大的孩子
 2. 满足度最小的孩子最容易得到满足，所以先满足满足度最小的孩子
 
-所以先对`g`和`s`进行排序，然后使用两个指针`si`和`gi`分别指向`g`和`s`的头部，然后循环比较`si`和`gi`指向的值，如果`s[si] >= g[gi]`，则`si++`，`gi++`，否则`si++`，直到`si`或者`gi`其中一者到达尾部，此时`gi`的值就是满足的孩子数
+所以先对`g`和`s`进行排序，然后使用两个指针`si`和`gi`分别指向`g`和`s`的头部，然后循环比较`si`和`gi`指向的值，如果
+`s[si] >= g[gi]`，则`si++`，`gi++`，否则`si++`，直到`si`或者`gi`其中一者到达尾部，此时`gi`的值就是满足的孩子数
 
 ### 如何保证这是最优解？
 
 我们假设能得到全局最优解，并使用反证法进行证明，即假设存在一种比我们使用的贪心策略更优的最优策略。如果不存在这种最优策略，表示贪心策略就是最优策略，得到的解也就是全局最优解
 
-证明：假设在某次选择中，贪心策略选择给当前满足度最小的孩子分配第 m 个饼干，第 m 个饼干为可以满足该孩子的最小饼干。假设存在一种最优策略，可以给该孩子分配第 n 个饼干，并且 m < n。我们可以发现，经过这一轮分配，贪心策略分配后剩下的饼干一定有一个比最优策略来得大。因此在后续的分配中，贪心策略一定能满足更多的孩子。也就是说不存在比贪心策略更优的策略，即贪心策略就是最优策略
+证明：假设在某次选择中，贪心策略选择给当前满足度最小的孩子分配第 m 个饼干，第 m 个饼干为可以满足该孩子的最小饼干。假设存在一种最优策略，可以给该孩子分配第
+n 个饼干，并且 m < n。我们可以发现，经过这一轮分配，贪心策略分配后剩下的饼干一定有一个比最优策略来得大。因此在后续的分配中，贪心策略一定能满足更多的孩子。也就是说不存在比贪心策略更优的策略，即贪心策略就是最优策略
 
 ## 435. [无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 
-Code: [435. 无重叠区间](./leetcode/editor/cn/NonOverlappingIntervals.java)
+Code: [435. 无重叠区间](./leetcode/editor/cn/Q435_NonOverlappingIntervals.java)
 
 本题的题意可以表达为:今天有好几个活动，每个活动都可以用区间`[start,end]`表示开始和结束的时间，那么最多能参加几个活动？
 
 所以优先选择参加那些结束时间早的，因为这样可以留下更多的时间参加其余的活动。如果有多个结束时间相同的，选择开始时间晚的，因为这样有助于参加更多的活动
 
 所以总体思路就是先把`intervals`先做个优先级排序，排在前面的优先级高于排在后面的。规则为：
+
 1. 按照结束时间从早到晚排序，结束时间相同的，开始时间晚的排在前面
 2. 遍历排序好的`intervals`，如果后面的活动和前面的活动冲突了，就选择移除后面的活动
 
-对于算法，首先使用`Arrays.sort`对`intervals`进行排序，其中使用java的lambda表达式来定义排序规则，让比对的对象为`intervals`中的每个小数组的第二位，即结束时间。所以在排序后将会得到一个按照结束时间从早到晚排序的`intervals`
+对于算法，首先使用`Arrays.sort`对`intervals`进行排序，其中使用java的lambda表达式来定义排序规则，让比对的对象为`intervals`
+中的每个小数组的第二位，即结束时间。所以在排序后将会得到一个按照结束时间从早到晚排序的`intervals`
 
-然后定义`end`为`intervals[0][1]`，遍历`intervals`，即第一个活动的结束时间，定义`available`为1，即第一个活动一定是要参加的，然后从第二个活动开始遍历，如果`intervals[i][0] >= end`，说明这个活动和前一个活动不冲突，可以参加，`end`更新为`intervals[i][1]`，`available++`，否则直接跳过。因为最后需要返回的是最多能参加的活动数，所以最后返回`intervals.length - available`即可
+然后定义`end`为`intervals[0][1]`，遍历`intervals`，即第一个活动的结束时间，定义`available`为1，即第一个活动一定是要参加的，然后从第二个活动开始遍历，如果
+`intervals[i][0] >= end`，说明这个活动和前一个活动不冲突，可以参加，`end`更新为`intervals[i][1]`，`available++`
+，否则直接跳过。因为最后需要返回的是最多能参加的活动数，所以最后返回`intervals.length - available`即可
 
 ### Lambda表达式的速度优化
 
@@ -150,3 +160,11 @@ public int eraseOverlapIntervals(int[][] intervals) {
     });
 }
 ```
+
+## 452. [用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+
+Code: [452. 用最少数量的箭引爆气球](./leetcode/editor/cn/Q452_MinimumNumberOfArrowsToBurstBalloons.java)
+
+和上一题类似，本题的题意可以表达为:今天有好几个气球，每个气球都可以用区间`[start,end]`表示开始和结束的位置，那么最少需要多少箭可以引爆所有的气球？
+
+所以只需注意类似`[1, 2]`和`[2, 3]`是重叠的，所以只需要一支箭就可以引爆这两个气球
