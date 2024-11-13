@@ -51,9 +51,9 @@ package leetcode.editor.cn;
  * Related Topics 数组 数学 字符串 👍 16 👎 0
  */
 
-public class PerformStringShifts {
+public class Q1427_PerformStringShifts {
     public static void main(String[] args) {
-        Solution solution = new PerformStringShifts().new Solution();
+        Solution solution = new Q1427_PerformStringShifts().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

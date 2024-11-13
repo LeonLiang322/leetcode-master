@@ -60,9 +60,9 @@ package leetcode.editor.cn;
  * Related Topics 数组 双指针 排序 👍 2437 👎 0
  */
 
-public class MergeSortedArray {
+public class Q88_MergeSortedArray {
     public static void main(String[] args) {
-        Solution solution = new MergeSortedArray().new Solution();
+        Solution solution = new Q88_MergeSortedArray().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

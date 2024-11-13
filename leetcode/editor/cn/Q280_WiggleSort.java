@@ -1,7 +1,5 @@
 package leetcode.editor.cn;
 
-import java.util.Arrays;
-
 /**
  * Given an integer array nums, reorder it such that nums[0] <= nums[1] >= nums[2]
  * <= nums[3]....
@@ -39,9 +37,9 @@ import java.util.Arrays;
  * Related Topics 贪心 数组 排序 👍 139 👎 0
  */
 
-public class WiggleSort {
+public class Q280_WiggleSort {
     public static void main(String[] args) {
-        Solution solution = new WiggleSort().new Solution();
+        Solution solution = new Q280_WiggleSort().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

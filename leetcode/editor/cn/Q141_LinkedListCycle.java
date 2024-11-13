@@ -53,19 +53,11 @@ package leetcode.editor.cn;
  * Related Topics 哈希表 链表 双指针 👍 2155 👎 0
  */
 
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
 
-public class LinkedListCycle {
+public class Q141_LinkedListCycle {
     public static void main(String[] args) {
-        Solution solution = new LinkedListCycle().new Solution();
+        Solution solution = new Q141_LinkedListCycle().new Solution();
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -91,6 +83,16 @@ public class LinkedListCycle {
                 slow = slow.next;
             }
             return false;
+        }
+    }
+
+    private class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

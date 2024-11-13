@@ -48,9 +48,9 @@ import java.util.Comparator;
  * Related Topics 贪心 数组 动态规划 排序 👍 1134 👎 0
  */
 
-public class NonOverlappingIntervals {
+public class Q435_NonOverlappingIntervals {
     public static void main(String[] args) {
-        Solution solution = new NonOverlappingIntervals().new Solution();
+        Solution solution = new Q435_NonOverlappingIntervals().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

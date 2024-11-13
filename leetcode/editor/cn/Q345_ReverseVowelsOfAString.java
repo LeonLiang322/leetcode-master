@@ -26,9 +26,9 @@ package leetcode.editor.cn;
  * Related Topics 双指针 字符串 👍 346 👎 0
  */
 
-public class ReverseVowelsOfAString {
+public class Q345_ReverseVowelsOfAString {
     public static void main(String[] args) {
-        Solution solution = new ReverseVowelsOfAString().new Solution();
+        Solution solution = new Q345_ReverseVowelsOfAString().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

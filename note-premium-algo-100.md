@@ -133,7 +133,7 @@ number=8196, res="0"
 
 每次更新最大长度
 
-## 1100. [长度为 K 的无重复字符子串](./leetcode/editor/cn/FindKLengthSubstringsWithNoRepeatedCharacters.java)
+## 1100. [长度为 K 的无重复字符子串](./leetcode/editor/cn/Q1100_FindKLengthSubstringsWithNoRepeatedCharacters.java)
 
 与159类似，使用滑动窗口的思路
 

@@ -1,8 +1,5 @@
 package leetcode.editor.cn;
 
-import java.util.Arrays;
-import java.util.HashMap;
-
 /**
  * A confusing number is a number that when rotated 180 degrees becomes a
  * different number with each digit valid.
@@ -60,9 +57,9 @@ import java.util.HashMap;
  * Related Topics 数学 👍 33 👎 0
  */
 
-public class ConfusingNumber {
+public class Q1056_ConfusingNumber {
     public static void main(String[] args) {
-        Solution solution = new ConfusingNumber().new Solution();
+        Solution solution = new Q1056_ConfusingNumber().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -38,9 +38,9 @@ package leetcode.editor.cn;
  * Related Topics 贪心 双指针 字符串 👍 643 👎 0
  */
 
-public class ValidPalindromeIi {
+public class Q680_ValidPalindromeIi {
     public static void main(String[] args) {
-        Solution solution = new ValidPalindromeIi().new Solution();
+        Solution solution = new Q680_ValidPalindromeIi().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

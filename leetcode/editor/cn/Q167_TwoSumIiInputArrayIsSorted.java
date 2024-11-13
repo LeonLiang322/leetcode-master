@@ -56,9 +56,9 @@ package leetcode.editor.cn;
  * Related Topics 数组 双指针 二分查找 👍 1208 👎 0
  */
 
-public class TwoSumIiInputArrayIsSorted {
+public class Q167_TwoSumIiInputArrayIsSorted {
     public static void main(String[] args) {
-        Solution solution = new TwoSumIiInputArrayIsSorted().new Solution();
+        Solution solution = new Q167_TwoSumIiInputArrayIsSorted().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

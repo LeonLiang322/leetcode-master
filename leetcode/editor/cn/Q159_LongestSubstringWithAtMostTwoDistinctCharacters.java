@@ -32,9 +32,9 @@ package leetcode.editor.cn;
  * Related Topics 哈希表 字符串 滑动窗口 👍 229 👎 0
  */
 
-public class LongestSubstringWithAtMostTwoDistinctCharacters {
+public class Q159_LongestSubstringWithAtMostTwoDistinctCharacters {
     public static void main(String[] args) {
-        Solution solution = new LongestSubstringWithAtMostTwoDistinctCharacters().new Solution();
+        Solution solution = new Q159_LongestSubstringWithAtMostTwoDistinctCharacters().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

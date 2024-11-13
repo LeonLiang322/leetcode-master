@@ -49,9 +49,9 @@ import java.util.Arrays;
  * Related Topics 贪心 数组 双指针 排序 👍 856 👎 0
  */
 
-public class AssignCookies {
+public class Q455_AssignCookies {
     public static void main(String[] args) {
-        Solution solution = new AssignCookies().new Solution();
+        Solution solution = new Q455_AssignCookies().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

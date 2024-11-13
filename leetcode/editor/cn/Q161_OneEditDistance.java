@@ -40,9 +40,9 @@ package leetcode.editor.cn;
  * Related Topics 双指针 字符串 👍 140 👎 0
  */
 
-public class OneEditDistance {
+public class Q161_OneEditDistance {
     public static void main(String[] args) {
-        Solution solution = new OneEditDistance().new Solution();
+        Solution solution = new Q161_OneEditDistance().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -83,7 +83,7 @@ Code: [88. 合并两个有序数组](./leetcode/editor/cn/MergeSortedArray.java)
 
 ## 141. [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 
-Code: [141. 环形链表](./leetcode/editor/cn/LinkedListCycle.java)
+Code: [141. 环形链表](./leetcode/editor/cn/Q141_LinkedListCycle.java)
 
 使用快慢指针的思路，定义快指针`fast`指向`head.next`，慢指针`slow`指向`head`
 

@@ -48,9 +48,9 @@ package leetcode.editor.cn;
  * Related Topics 贪心 双指针 字符串 👍 128 👎 0
  */
 
-public class ShortestWayToFormString {
+public class Q1055_ShortestWayToFormString {
     public static void main(String[] args) {
-        Solution solution = new ShortestWayToFormString().new Solution();
+        Solution solution = new Q1055_ShortestWayToFormString().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

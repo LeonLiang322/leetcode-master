@@ -30,9 +30,9 @@ package leetcode.editor.cn;
  * Related Topics 数学 双指针 二分查找 👍 452 👎 0
  */
 
-public class SumOfSquareNumbers {
+public class Q633_SumOfSquareNumbers {
     public static void main(String[] args) {
-        Solution solution = new SumOfSquareNumbers().new Solution();
+        Solution solution = new Q633_SumOfSquareNumbers().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

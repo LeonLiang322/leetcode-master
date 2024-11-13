@@ -47,9 +47,9 @@ package leetcode.editor.cn;
  * Related Topics 数组 动态规划 滑动窗口 👍 150 👎 0
  */
 
-public class MaxConsecutiveOnesIi {
+public class Q487_MaxConsecutiveOnesIi {
     public static void main(String[] args) {
-        Solution solution = new MaxConsecutiveOnesIi().new Solution();
+        Solution solution = new Q487_MaxConsecutiveOnesIi().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

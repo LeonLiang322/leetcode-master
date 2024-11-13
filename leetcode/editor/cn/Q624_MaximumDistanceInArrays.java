@@ -43,9 +43,9 @@ import java.util.List;
  * Related Topics 贪心 数组 👍 100 👎 0
  */
 
-public class MaximumDistanceInArrays {
+public class Q624_MaximumDistanceInArrays {
     public static void main(String[] args) {
-        Solution solution = new MaximumDistanceInArrays().new Solution();
+        Solution solution = new Q624_MaximumDistanceInArrays().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -85,16 +85,16 @@ public class MaximumDistanceInArrays {
 
         public int maxDistance(List<List<Integer>> arrays) {
             int len = arrays.size();
-            int min_val = arrays.getFirst().getFirst();
-            int max_val = arrays.getFirst().getLast();
+            int min_val = arrays.get(0).get(0);
+            int max_val = arrays.get(0).get(arrays.get(0).size() - 1);
             int res = 0;
-            arrays.removeFirst();
-            for (List<Integer> arr : arrays) {
-                res = Math.max(res, Math.abs(min_val - arr.getLast()));
-                res = Math.max(res, Math.abs(arr.getFirst() - max_val));
-                // res = Math.max(res, Math.max(Math.abs(min_val - arr.getLast()), Math.abs(arr.getFirst() - max_val)));
-                min_val = Math.min(min_val, arr.getFirst());
-                max_val = Math.max(max_val, arr.getLast());
+
+            for (int i = 1; i < len; i++) {
+                List<Integer> arr = arrays.get(i);
+                res = Math.max(res, Math.abs(min_val - arr.get(arr.size() - 1)));
+                res = Math.max(res, Math.abs(arr.get(0) - max_val));
+                min_val = Math.min(min_val, arr.get(0));
+                max_val = Math.max(max_val, arr.get(arr.size() - 1));
             }
             // for (int i = 1; i < len; i++) {
             //     res = Math.max(res, Math.abs(min_val - arrays.get(i).getLast()));

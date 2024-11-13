@@ -32,9 +32,9 @@ package leetcode.editor.cn;
  * Related Topics 双指针 字符串 👍 125 👎 0
  */
 
-public class ReverseWordsInAStringIi {
+public class Q186_ReverseWordsInAStringIi {
     public static void main(String[] args) {
-        Solution solution = new ReverseWordsInAStringIi().new Solution();
+        Solution solution = new Q186_ReverseWordsInAStringIi().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

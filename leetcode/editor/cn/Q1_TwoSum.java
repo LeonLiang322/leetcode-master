@@ -50,9 +50,9 @@ package leetcode.editor.cn;
  * Related Topics 数组 哈希表 👍 18481 👎 0
  */
 
-public class TwoSum {
+public class Q1_TwoSum {
     public static void main(String[] args) {
-        Solution solution = new TwoSum().new Solution();
+        Solution solution = new Q1_TwoSum().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

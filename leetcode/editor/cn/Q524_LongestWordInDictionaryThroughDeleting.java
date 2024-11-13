@@ -37,9 +37,9 @@ import java.util.List;
  * Related Topics 数组 双指针 字符串 排序 👍 370 👎 0
  */
 
-public class LongestWordInDictionaryThroughDeleting {
+public class Q524_LongestWordInDictionaryThroughDeleting {
     public static void main(String[] args) {
-        Solution solution = new LongestWordInDictionaryThroughDeleting().new Solution();
+        Solution solution = new Q524_LongestWordInDictionaryThroughDeleting().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -35,9 +35,9 @@ package leetcode.editor.cn;
  * Related Topics 哈希表 字符串 滑动窗口 👍 57 👎 0
  */
 
-public class FindKLengthSubstringsWithNoRepeatedCharacters {
+public class Q1100_FindKLengthSubstringsWithNoRepeatedCharacters {
     public static void main(String[] args) {
-        Solution solution = new FindKLengthSubstringsWithNoRepeatedCharacters().new Solution();
+        Solution solution = new Q1100_FindKLengthSubstringsWithNoRepeatedCharacters().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -45,9 +45,9 @@ import java.util.Map;
  * Related Topics 数组 哈希表 👍 50 👎 0
  */
 
-public class FindAnagramMappings {
+public class Q760_FindAnagramMappings {
     public static void main(String[] args) {
-        Solution solution = new FindAnagramMappings().new Solution();
+        Solution solution = new Q760_FindAnagramMappings().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
