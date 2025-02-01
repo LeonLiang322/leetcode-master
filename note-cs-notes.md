@@ -203,3 +203,9 @@ Code: [406. 根据身高重建队列](./leetcode/editor/cn/Q406_QueueReconstruct
 [5, 0], [7, 0], [5, 2], [6, 1], [7, 1]
 [5, 0], [7, 0], [5, 2], [6, 1], [4, 4], [7, 1]
 ```
+
+## 121. [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+
+Code: [121. 买卖股票的最佳时机](./leetcode/editor/cn/Q121_BestTimeToBuyAndSellStock.java)
+
+只需要记住最低点，然后计算当前点和最低点的差值，取最大值即可
