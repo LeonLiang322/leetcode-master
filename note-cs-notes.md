@@ -208,4 +208,10 @@ Code: [406. 根据身高重建队列](./leetcode/editor/cn/Q406_QueueReconstruct
 
 Code: [121. 买卖股票的最佳时机](./leetcode/editor/cn/Q121_BestTimeToBuyAndSellStock.java)
 
-只需要记住最低点，然后计算当前点和最低点的差值，取最大值即可
+只需要记住最低点，然后计算当前点和最低点的差值，取最大值
+
+## 122. [买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+
+Code: [122. 买卖股票的最佳时机 II](./leetcode/editor/cn/Q122_BestTimeToBuyAndSellStockIi.java)
+
+因为一次只能持有一只股票，所以只要今天的价格比昨天的价格高就卖出，然后累加就是最大的利润
