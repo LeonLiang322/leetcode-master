@@ -215,3 +215,11 @@ Code: [121. 买卖股票的最佳时机](./leetcode/editor/cn/Q121_BestTimeToBuy
 Code: [122. 买卖股票的最佳时机 II](./leetcode/editor/cn/Q122_BestTimeToBuyAndSellStockIi.java)
 
 因为一次只能持有一只股票，所以只要今天的价格比昨天的价格高就卖出，然后累加就是最大的利润
+
+## 605. [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
+
+Code: [605. 种花问题](./leetcode/editor/cn/Q605_CanPlaceFlowers.java)
+
+虽然官方题解是贪心算法，但是我直接使用了遍历的方式，每次判断当前位置是否可以种花，如果可以种花则`n--`，跳过下一个位置因为已经种花了。
+
+对于首尾的情况，只需要判断`flowerbed[1]`和`flowerbed[n - 2]`是否为0
