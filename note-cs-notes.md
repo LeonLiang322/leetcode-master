@@ -1,5 +1,11 @@
 # CS-Notes面试笔记力扣经典题
 
+## 1. [两数之和](https://leetcode-cn.com/problems/two-sum/)
+
+Code: [1. 两数之和](./leetcode/editor/cn/Q1_TwoSum.java)
+
+使用哈希表的思路，遍历数组，将数组的值和索引存入哈希表，然后再次遍历数组，查找`target - nums[i]`是否在哈希表中
+
 ## 167. [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
 Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/Q167_TwoSumIiInputArrayIsSorted.java)
