@@ -229,3 +229,11 @@ Code: [605. 种花问题](./leetcode/editor/cn/Q605_CanPlaceFlowers.java)
 虽然官方题解是贪心算法，但是我直接使用了遍历的方式，每次判断当前位置是否可以种花，如果可以种花则`n--`，跳过下一个位置因为已经种花了。
 
 对于首尾的情况，只需要判断`flowerbed[1]`和`flowerbed[n - 2]`是否为0
+
+## 392. [判断子序列](https://leetcode-cn.com/problems/is-subsequence/)
+
+Code: [392. 判断子序列](./leetcode/editor/cn/Q392_IsSubsequence.java)
+
+使用String的`indexOf`方法来判断是否是子序列。定义`index`为-1，循环判断`s`中的每个字符在`t`中的位置，如果找到了，则更新`index`为当前字符在`t`中的位置，否则返回false
+
+`indexOf`接受输入的参数为`(char c, int fromIndex)`，表示从`fromIndex`开始查找字符`c`在`t`中的位置，所以每次查找时都要将`fromIndex`更新为当前字符在`t`中的位置加1
