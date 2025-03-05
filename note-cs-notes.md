@@ -1,12 +1,12 @@
 # CS-Notes面试笔记力扣经典题
 
-## 1. [两数之和](https://leetcode-cn.com/problems/two-sum/)
+## 1. [两数之和](https://leetcode.cn/problems/two-sum/)
 
 Code: [1. 两数之和](./leetcode/editor/cn/Q1_TwoSum.java)
 
 使用哈希表的思路，遍历数组，将数组的值和索引存入哈希表，然后再次遍历数组，查找`target - nums[i]`是否在哈希表中
 
-## 167. [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+## 167. [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
 
 Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/Q167_TwoSumIiInputArrayIsSorted.java)
 
@@ -14,7 +14,7 @@ Code: [167. 两数之和 II - 输入有序数组](./leetcode/editor/cn/Q167_TwoS
 
 当两个指针指向的数之和大于`target`时，右指针向左移动，否则左指针向右移动
 
-## 633. [平方数之和](https://leetcode-cn.com/problems/sum-of-square-numbers/)
+## 633. [平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
 
 Code: [633. 平方数之和](./leetcode/editor/cn/Q633_SumOfSquareNumbers.java)
 
@@ -50,7 +50,7 @@ Code: [633. 平方数之和](./leetcode/editor/cn/Q633_SumOfSquareNumbers.java)
 
 因为存在`0 <= c <= 2^31 - 1`
 
-## 345. [反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)
+## 345. [反转字符串中的元音字母](https://leetcode.cn/problems/reverse-vowels-of-a-string/)
 
 Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/Q345_ReverseVowelsOfAString.java)
 
@@ -64,7 +64,7 @@ Code: [345. 反转字符串中的元音字母](./leetcode/editor/cn/Q345_Reverse
 
 `String`类型是不可变的，所以可以使用`StringBuilder`或者`toCharArray()`的方式来修改字符串
 
-## 680. [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
+## 680. [验证回文字符串 Ⅱ](https://leetcode.cn/problems/valid-palindrome-ii/)
 
 Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/Q680_ValidPalindromeIi.java)
 
@@ -75,7 +75,7 @@ Code: [680. 验证回文字符串 Ⅱ](./leetcode/editor/cn/Q680_ValidPalindrome
 - 当删除左边的字符时，左指针向右移动，右指针不动，然后继续判断完剩余的字符串是否是回文串
 - 当删除右边的字符时，右指针向左移动，左指针不动，然后继续判断完剩余的字符串是否是回文串
 
-## 88. [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+## 88. [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)
 
 Code: [88. 合并两个有序数组](./leetcode/editor/cn/Q88_MergeSortedArray.java)
 
@@ -88,7 +88,7 @@ Code: [88. 合并两个有序数组](./leetcode/editor/cn/Q88_MergeSortedArray.j
 
 因为当`ni < 0`时，说明`nums2`中的元素已经全部放到`nums1`中了，且此时`nums1`中的元素已经是有序的，不需要再进行操作
 
-## 141. [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+## 141. [环形链表](https://leetcode.cn/problems/linked-list-cycle/)
 
 Code: [141. 环形链表](./leetcode/editor/cn/Q141_LinkedListCycle.java)
 
@@ -96,7 +96,7 @@ Code: [141. 环形链表](./leetcode/editor/cn/Q141_LinkedListCycle.java)
 
 `fast`每次移动两步，`slow`每次移动一步，当`fast`和`slow`相遇时，说明链表中存在环
 
-## 524. [通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)
+## 524. [通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 
 Code: [524. 通过删除字母匹配到字典里最长单词](./leetcode/editor/cn/Q524_LongestWordInDictionaryThroughDeleting.java)
 
@@ -112,7 +112,7 @@ Code: [524. 通过删除字母匹配到字典里最长单词](./leetcode/editor/
 
 当循环结束时，如果`j`到达`dic`的尾部，说明`dic`是`s`的子序列
 
-## 455. [分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
+## 455. [分发饼干](https://leetcode.cn/problems/assign-cookies/)
 
 Code: [455. 分发饼干](./leetcode/editor/cn/Q455_AssignCookies.java)
 
@@ -131,7 +131,7 @@ Code: [455. 分发饼干](./leetcode/editor/cn/Q455_AssignCookies.java)
 证明：假设在某次选择中，贪心策略选择给当前满足度最小的孩子分配第 m 个饼干，第 m 个饼干为可以满足该孩子的最小饼干。假设存在一种最优策略，可以给该孩子分配第
 n 个饼干，并且 m < n。我们可以发现，经过这一轮分配，贪心策略分配后剩下的饼干一定有一个比最优策略来得大。因此在后续的分配中，贪心策略一定能满足更多的孩子。也就是说不存在比贪心策略更优的策略，即贪心策略就是最优策略
 
-## 435. [无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+## 435. [无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/)
 
 Code: [435. 无重叠区间](./leetcode/editor/cn/Q435_NonOverlappingIntervals.java)
 
@@ -167,7 +167,7 @@ public int eraseOverlapIntervals(int[][] intervals) {
 }
 ```
 
-## 452. [用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+## 452. [用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/)
 
 Code: [452. 用最少数量的箭引爆气球](./leetcode/editor/cn/Q452_MinimumNumberOfArrowsToBurstBalloons.java)
 
@@ -175,7 +175,7 @@ Code: [452. 用最少数量的箭引爆气球](./leetcode/editor/cn/Q452_Minimum
 
 所以只需注意类似`[1, 2]`和`[2, 3]`是重叠的，所以只需要一支箭就可以引爆这两个气球
 
-## 406. [根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
+## 406. [根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/)
 
 Code: [406. 根据身高重建队列](./leetcode/editor/cn/Q406_QueueReconstructionByHeight.java)
 
@@ -210,19 +210,19 @@ Code: [406. 根据身高重建队列](./leetcode/editor/cn/Q406_QueueReconstruct
 [5, 0], [7, 0], [5, 2], [6, 1], [4, 4], [7, 1]
 ```
 
-## 121. [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+## 121. [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 
 Code: [121. 买卖股票的最佳时机](./leetcode/editor/cn/Q121_BestTimeToBuyAndSellStock.java)
 
 只需要记住最低点，然后计算当前点和最低点的差值，取最大值
 
-## 122. [买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+## 122. [买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
 
 Code: [122. 买卖股票的最佳时机 II](./leetcode/editor/cn/Q122_BestTimeToBuyAndSellStockIi.java)
 
 因为一次只能持有一只股票，所以只要今天的价格比昨天的价格高就卖出，然后累加就是最大的利润
 
-## 605. [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
+## 605. [种花问题](https://leetcode.cn/problems/can-place-flowers/)
 
 Code: [605. 种花问题](./leetcode/editor/cn/Q605_CanPlaceFlowers.java)
 
@@ -230,10 +230,20 @@ Code: [605. 种花问题](./leetcode/editor/cn/Q605_CanPlaceFlowers.java)
 
 对于首尾的情况，只需要判断`flowerbed[1]`和`flowerbed[n - 2]`是否为0
 
-## 392. [判断子序列](https://leetcode-cn.com/problems/is-subsequence/)
+## 392. [判断子序列](https://leetcode.cn/problems/is-subsequence/)
 
 Code: [392. 判断子序列](./leetcode/editor/cn/Q392_IsSubsequence.java)
 
 使用String的`indexOf`方法来判断是否是子序列。定义`index`为-1，循环判断`s`中的每个字符在`t`中的位置，如果找到了，则更新`index`为当前字符在`t`中的位置，否则返回false
 
 `indexOf`接受输入的参数为`(char c, int fromIndex)`，表示从`fromIndex`开始查找字符`c`在`t`中的位置，所以每次查找时都要将`fromIndex`更新为当前字符在`t`中的位置加1
+
+## 665. [非递减数列](https://leetcode.cn/problems/non-decreasing-array/)
+
+Code: [665. 非递减数列](./leetcode/editor/cn/Q665_NonDecreasingArray.java)
+
+当出现`nums[i] < nums[i - 1]`时，需要考虑应该修改`nums[i]`还是`nums[i - 1]`才能让`i`之前的数列成为非递减数组，并且不影响后续的操作
+
+优先考虑修改`nums[i - 1] = nums[i]`，因为这样不会让`nums[i]`这个数变大，避免导致`nums[i] > nums[i + 1]`
+
+还有个特殊情况，就是`nums[i] < nums[i - 2]`，此时只能修改`nums[i] = nums[i - 1]`
