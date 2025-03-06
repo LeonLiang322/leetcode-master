@@ -247,3 +247,13 @@ Code: [665. 非递减数列](./leetcode/editor/cn/Q665_NonDecreasingArray.java)
 优先考虑修改`nums[i - 1] = nums[i]`，因为这样不会让`nums[i]`这个数变大，避免导致`nums[i] > nums[i + 1]`
 
 还有个特殊情况，就是`nums[i] < nums[i - 2]`，此时只能修改`nums[i] = nums[i - 1]`
+
+## 53. [最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
+
+Code: [53. 最大子数组和](./leetcode/editor/cn/Q53_MaximumSubarray.java)
+
+使用贪心的思路，定义`preSum`为`nums[0]`，进入循环。
+
+每次都给`preSum`加上当前的值`nums[i]`，如果`preSum > maxSum`，则更新`maxSum`为`preSum`
+
+当遇到`preSum < 0`时，将`preSum`置为`nums[i]`，然后继续循环，相当于舍弃了前面的部分。但是由于前段的最大值已记录在`maxSum`中，所以不会丢失最大值
