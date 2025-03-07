@@ -257,3 +257,17 @@ Code: [53. 最大子数组和](./leetcode/editor/cn/Q53_MaximumSubarray.java)
 每次都给`preSum`加上当前的值`nums[i]`，如果`preSum > maxSum`，则更新`maxSum`为`preSum`
 
 当遇到`preSum < 0`时，将`preSum`置为`nums[i]`，然后继续循环，相当于舍弃了前面的部分。但是由于前段的最大值已记录在`maxSum`中，所以不会丢失最大值
+
+## 763. [划分字母区间](https://leetcode.cn/problems/partition-labels/)
+
+Code: [763. 划分字母区间](./leetcode/editor/cn/Q763_PartitionLabels.java)
+
+使用贪心的思路，定义`last`为每个字母在`s`中最后出现的位置，然后遍历`s`，当`i`等于`last`时，说明当前的字母区间已经划分完毕，更新`last`为当前字母的最后位置，然后将当前的字母区间加入结果中
+
+举例：假设`s = "ababcbacadefegdehijhklij"`，那么`last`的值为：
+
+| a | b | c | d | e | f | g | h  | i  | j |
+|---|---|---|---|---|---|---|----|----|---|
+| 8 | 5 | 2 | 4 | 7 | 6 | 3 | 15 | 14 | 9 |
+
+所以当遍历到`i = 8`时，说明当前的字母区间已经划分完毕，更新`last`为`8`，然后将当前的字母区间加入结果中
