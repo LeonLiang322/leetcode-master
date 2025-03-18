@@ -190,3 +190,12 @@ Code: [734. 句子相似性](./leetcode/editor/cn/Q734_SentenceSimilarity.java)
 2. 第一个单词拼接第二个单词在Set中存在
 3. 第二个单词拼接第一个单词在Set中存在
 
+## 1165. [单行键盘](https://leetcode.cn/problems/single-row-keyboard/)
+
+Code: [1165. 单行键盘](./leetcode/editor/cn/Q1165_SingleRowKeyboard.java)
+
+创建一个26位的数组来储存每个字母在键盘上的位置索引
+
+创建`prev`变量来储存上一个字母的位置索引
+
+遍历字符串中的每个字母，将当前字母的位置索引与上一个字母的位置索引差值的绝对值相加，更新`prev`为当前字母的位置索引
