@@ -177,3 +177,16 @@ Code: [266. 回文排列](./leetcode/editor/cn/Q266_PalindromePermutation.java)
 
 使用hashmap来存储字符和对应的出现次数，计算出现次数为奇数的字符个数，最终结果小于等于1即可
 
+## 734. [句子相似性](https://leetcode.cn/problems/sentence-similarity/)
+
+Code: [734. 句子相似性](./leetcode/editor/cn/Q734_SentenceSimilarity.java)
+
+首先判断两个句子的长度是否相同，若不同则直接返回false
+
+使用Set来储存拼接起来的单词对，然后遍历句子中的每个单词
+
+相似的条件：
+1. 两个单词长度相同
+2. 第一个单词拼接第二个单词在Set中存在
+3. 第二个单词拼接第一个单词在Set中存在
+
