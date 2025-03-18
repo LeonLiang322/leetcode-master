@@ -1,6 +1,8 @@
 # 尊享面试100题
 
-## 624. [数组列表中的最大距离](./leetcode/editor/cn/MaximumDistanceInArrays.java)
+## 624. [数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/)
+
+Code: [624. 数组列表中的最大距离](./leetcode/editor/cn/Q624_MaximumDistanceInArrays.java)
 
 ### 暴力解法
 
@@ -22,7 +24,9 @@ Q: 如果最大和最小同时在一个数组中会发生什么？
 
 A: max_val和min_val在使用时是处理之前的数组时记录的，并不会影响结果
 
-## 280. [摆动排序](./leetcode/editor/cn/WiggleSort.java)
+## 280. [摆动排序](https://leetcode.cn/problems/wiggle-sort/)
+
+Code: [280. 摆动排序](./leetcode/editor/cn/Q280_WiggleSort.java)
 
 ### 暴力解法
 
@@ -50,7 +54,9 @@ A: max_val和min_val在使用时是处理之前的数组时记录的，并不会
 
 则当i为奇数位时，判断[i+1]是否小于[i]，是则互换
 
-## 1056. [易混淆数](./leetcode/editor/cn/ConfusingNumber.java)
+## 1056. [易混淆数](https://leetcode.cn/problems/confusing-number/)
+
+Code: [1056. 易混淆数](./leetcode/editor/cn/Q1056_ConfusingNumber.java)
 
 由于倒转后的值是顺序变为逆序的，所以用纯数学方法储存结果需要知道数值的位数，并不方便。所以在此处使用StringBuilder创建字符串来储存结果。
 
@@ -64,7 +70,9 @@ number=8196, res="0"
 
 以此类推，并最终使用`Integer.parseInt`转化为整数，开头的0会自动去除
 
-## 1427. [字符串的左右移](./leetcode/editor/cn/PerformStringShifts.java)
+## 1427. [字符串的左右移](https://leetcode.cn/problems/perform-string-shifts/)
+
+Code: [1427. 字符串的左右移](./leetcode/editor/cn/Q1427_PerformStringShifts.java)
 
 首先以整数形式计算最终的移动方向和步数，存于`finalShift`中
 
@@ -74,7 +82,9 @@ number=8196, res="0"
 
 以`finalShift`为切点，以后半部分+前半部分的形式返回结果
 
-## 161. [相隔为1的编辑距离](./leetcode/editor/cn/OneEditDistance.java)
+## 161. [相隔为1的编辑距离](https://leetcode.cn/problems/one-edit-distance/)
+
+Code: [161. 相隔为1的编辑距离](./leetcode/editor/cn/Q161_OneEditDistance.java)
 
 当两个字符串长度相差大于1时，直接返回false
 
@@ -84,7 +94,9 @@ number=8196, res="0"
 
 为避免代码额外判断字符串更长，我们只需默认第一个字符串更长，若不是则调换两个字符串的位置即可重新调用一次函数即可
 
-## 186. [反转字符串中的单词II](./leetcode/editor/cn/ReverseWordsInAStringIi.java)
+## 186. [反转字符串中的单词II](https://leetcode.cn/problems/reverse-words-in-a-string-ii/)
+
+Code: [186. 反转字符串中的单词 II](./leetcode/editor/cn/Q186_ReverseWordsInAStringIi.java)
 
 首先将整个字符串反转，然后遍历字符串
 
@@ -92,7 +104,9 @@ number=8196, res="0"
 
 由于最后一个单词后并没有空格，所以最后手动将该单词反转
 
-## 1055. [形成字符串的最短路径](./leetcode/editor/cn/ShortestWayToFormString.java)
+## 1055. [形成字符串的最短路径](https://leetcode.cn/problems/shortest-way-to-form-string/)
+
+Code: [1055. 形成字符串的最短路径](./leetcode/editor/cn/Q1055_ShortestWayToFormString.java)
 
 使用双指针的思路，遍历`source`字符串，当`source`的字符与`target`的字符相同时，两个指针同时向后移动
 
@@ -102,7 +116,9 @@ number=8196, res="0"
 
 否则，`source`的指针回到开头，计数器+1
 
-## 159. [至多包含两个不同字符的最长子串](./leetcode/editor/cn/LongestSubstringWithAtMostTwoDistinctCharacters.java)
+## 159. [至多包含两个不同字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/)
+
+Code: [159. 至多包含两个不同字符的最长子串](./leetcode/editor/cn/Q159_LongestSubstringWithAtMostTwoDistinctCharacters.java)
 
 当字符串长度小于等于2时，直接返回字符串长度
 
@@ -117,11 +133,15 @@ number=8196, res="0"
 
 当`count`减到2时，更新最大长度
 
-## 340. [至多包含 K 个不同字符的最长子串](./leetcode/editor/cn/LongestSubstringWithAtMostKDistinctCharacters.java)
+## 340. [至多包含 K 个不同字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/)
+
+Code: [340. 至多包含 K 个不同字符的最长子串](./leetcode/editor/cn/Q340_LongestSubstringWithAtMostKDistinctCharacters.java)
 
 与上一题类似，只是将`count`的判断条件改为`count > k`即可
 
-## 487. [最大连续1的个数 II](./leetcode/editor/cn/MaxConsecutiveOnesIi.java)
+## 487. [最大连续1的个数 II](https://leetcode.cn/problems/max-consecutive-ones-ii/)
+
+Code: [487. 最大连续1的个数 II](./leetcode/editor/cn/Q487_MaxConsecutiveOnesIi.java)
 
 **
 该题仍然可以使用上两题的滑动窗口思路，但是由于只能翻转一次0，所以只需要在碰到第二个0时，将左指针移动到第一个0的下一位即可
@@ -133,7 +153,9 @@ number=8196, res="0"
 
 每次更新最大长度
 
-## 1100. [长度为 K 的无重复字符子串](./leetcode/editor/cn/Q1100_FindKLengthSubstringsWithNoRepeatedCharacters.java)
+## 1100. [长度为 K 的无重复字符子串](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/)
+
+Code: [1100. 长度为 K 的无重复字符子串](./leetcode/editor/cn/Q1100_FindKLengthSubstringsWithNoRepeatedCharacters.java)
 
 与159类似，使用滑动窗口的思路
 
@@ -141,10 +163,17 @@ number=8196, res="0"
 
 当滑窗长度等于`k`时，如果当前字符也刚好五种，则计数器+1
 
-## 760. [找出变位映射](./leetcode/editor/cn/FindAnagramMappings.java)
+## 760. [找出变位映射](https://leetcode.cn/problems/find-anagram-mappings/)
+
+Code: [760. 找出变位映射](./leetcode/editor/cn/Q760_FindAnagramMappings.java)
 
 使用双循环的方法就不赘述了，这里使用标准思路hashmap来存储`num2`数组的值和对应的下标
 
 遍历`num1`数组，将`num1`数组的值和对应的下标存储在map中，然后遍历`num2`数组，将`num2`数组的值在map中查找对应的下标
 
+## 266. [回文排列](https://leetcode.cn/problems/palindrome-permutation/)
+
+Code: [266. 回文排列](./leetcode/editor/cn/Q266_PalindromePermutation.java)
+
+使用hashmap来存储字符和对应的出现次数，计算出现次数为奇数的字符个数，最终结果小于等于1即可
 
