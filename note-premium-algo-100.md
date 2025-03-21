@@ -220,3 +220,8 @@ Code: [1133. 最大唯一数](./leetcode/editor/cn/Q1133_LargestUniqueNumber.jav
 
 使用hashmap来存储每个数字的出现次数，遍历map中的每个数字，若该数字的出现次数为1，则更新最大值
 
+## 1426. [数元素](https://leetcode.cn/problems/counting-elements/)
+
+Code: [1426. 数元素](./leetcode/editor/cn/Q1426_CountingElements.java)
+
+将数组使用hashset来存储，遍历数组中的每个数字，判断该数字+1是否在hashset中存在，若存在则计数器+1
