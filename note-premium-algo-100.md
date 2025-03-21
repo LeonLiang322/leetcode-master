@@ -238,3 +238,20 @@ Code: [1198. 找到所有行中最小公共元素](./leetcode/editor/cn/Q1198_Fi
 
 本题还有二分法优化方案，具体参考题解
 
+## 422. [有效的单词方块](https://leetcode.cn/problems/valid-word-square/)
+
+Code: [422. 有效的单词方块](./leetcode/editor/cn/Q422_ValidWordSquare.java)
+
+示例
+```
+abcd
+bnrt
+crmy
+dtye
+```
+
+可以看出，第一行的第一个字母和第二行的第一个字母相同，第二行的第二个字母和第三行的第二个字母相同，以此类推
+
+所以只需要判断每一行的第i个字母是否等于第i行的第j个字母即可
+
+需要注意的是，当单词长度超过了行数时，直接返回false，如`abc`和`b`
