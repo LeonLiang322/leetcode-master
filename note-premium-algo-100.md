@@ -213,3 +213,10 @@ Code: [249. 移位字符串分组](./leetcode/editor/cn/Q249_GroupShiftedStrings
 `"az"`和`"ba"`的差值分别为`25`和`-1`，但实际上它们的差值是相同的为`25`
 2. 获取当前map的值，若map中没有该差值，则将其添加到map中，并将当前字符串添加到对应的列表中，若有则直接添加到对应的列表中
 3. 最后将map中的所有值添加到结果列表中并返回
+
+## 1133. [最大唯一数](https://leetcode.cn/problems/largest-unique-number/)
+
+Code: [1133. 最大唯一数](./leetcode/editor/cn/Q1133_LargestUniqueNumber.java)
+
+使用hashmap来存储每个数字的出现次数，遍历map中的每个数字，若该数字的出现次数为1，则更新最大值
+
