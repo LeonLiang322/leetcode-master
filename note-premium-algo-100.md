@@ -225,3 +225,16 @@ Code: [1133. 最大唯一数](./leetcode/editor/cn/Q1133_LargestUniqueNumber.jav
 Code: [1426. 数元素](./leetcode/editor/cn/Q1426_CountingElements.java)
 
 将数组使用hashset来存储，遍历数组中的每个数字，判断该数字+1是否在hashset中存在，若存在则计数器+1
+
+## 1198. [找到所有行中最小公共元素](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/)
+
+Code: [1198. 找到所有行中最小公共元素](./leetcode/editor/cn/Q1198_FindSmallestCommonElementInAllRows.java)
+
+当某个数字在所有行中出现的次数等于行数时，返回该数字即可
+
+由于题目给出限制数字大小在1-10000之间，所以创建一个10001大小的数组来储存每个数字出现的次数
+
+同时每行的数字时严格递增的，所以按照列的顺序进行计数可以更快找到
+
+本题还有二分法优化方案，具体参考题解
+
